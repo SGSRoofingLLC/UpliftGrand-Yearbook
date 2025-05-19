@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PNG Flipbook</title>
+  <link rel="stylesheet" href="https://unpkg.com/stpageflip/dist/css/stpageflip.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    #flipbookContainer {
+      width: 90%;
+      max-width: 800px;
+      height: 600px;
+      margin: 20px auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      background: white;
+    }
+    input {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PNG to Digital Flipbook</h1>
+  <input type="file" id="imageUpload" accept="image/png, image/jpeg" multiple />
+
+  <div id="flipbookContainer"></div>
+
+  <script src="https://unpkg.com/stpageflip"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
